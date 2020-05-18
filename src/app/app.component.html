@@ -1,5 +1,32 @@
-<ul>
-  <li><a href="/hello-route">Hello</a></li>
-  <li><a href="/world-route">World</a></li>
-</ul>
-<router-outlet></router-outlet>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">ng9HelloWorld</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/hello-route">Hello</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/world-route">World</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="text-muted text-center">
+      A demo Angular 9 application created by 
+      <a href="https://twitter.com/mjcwly">@mjcwly</a>
+    </div>
+  </div>
+</footer>
